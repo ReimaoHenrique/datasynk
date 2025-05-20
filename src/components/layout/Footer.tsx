@@ -1,11 +1,9 @@
 "use client";
 
-import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
-import { motion } from 'framer-motion';
-
+import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-12 md:py-16">
@@ -16,22 +14,55 @@ const Footer = () => {
               DataSynk
             </h2>
             <p className="text-gray-300 max-w-xs">
-              Transformando ideias em soluções tecnológicas inovadoras para impulsionar o seu negócio.
+              Transformando ideias em soluções tecnológicas inovadoras para
+              impulsionar o seu negócio.
             </p>
           </div>
-          
+
           {/* Links Rápidos */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Links Rápidos</h3>
             <ul className="space-y-2">
-              <li><a href="/" className="text-gray-300 hover:text-blue-400 transition-colors">Início</a></li>
-              <li><a href="/about" className="text-gray-300 hover:text-blue-400 transition-colors">Sobre</a></li>
-              <li><a href="/services" className="text-gray-300 hover:text-blue-400 transition-colors">Serviços</a></li>
-              <li><a href="/projects" className="text-gray-300 hover:text-blue-400 transition-colors">Projetos</a></li>
-              <li><a href="/contact" className="text-gray-300 hover:text-blue-400 transition-colors">Contato</a></li>
+              <li>
+                <a className="text-gray-300 hover:text-blue-400 transition-colors">
+                  Início
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  Sobre
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services"
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  Serviços
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/projects"
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  Projetos
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact"
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  Contato
+                </a>
+              </li>
             </ul>
           </div>
-          
+
           {/* Tecnologias */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Tecnologias</h3>
@@ -43,7 +74,7 @@ const Footer = () => {
               <li className="text-gray-300">Kubernetes (K8s)</li>
             </ul>
           </div>
-          
+
           {/* Contato */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contato</h3>
@@ -63,7 +94,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
           <p>&copy; {currentYear} DataSynk. Todos os direitos reservados.</p>
         </div>
