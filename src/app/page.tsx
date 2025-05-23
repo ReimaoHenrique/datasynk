@@ -10,23 +10,44 @@ export default function Home() {
   const technologies = [
     {
       name: "React Native",
-      description: "Desenvolvimento de aplicativos móveis multiplataforma",
+      image: "/Marquee/react-native.svg",
+    },
+
+    {
+      name: "Next.js",
+      image: "/Marquee/nextjs.svg",
+    },
+    {
+      name: "TypeScript",
+      image: "/Marquee/typescript.svg",
     },
     {
       name: "React",
-      description: "Criação de interfaces web interativas e dinâmicas",
-    },
-    {
-      name: "Next.js",
-      description: "Framework React para aplicações web de alta performance",
+      image: "/Marquee/react.svg",
     },
     {
       name: "Electron",
-      description: "Desenvolvimento de aplicações desktop multiplataforma",
+      image: "/Marquee/electron.svg",
     },
     {
-      name: "Kubernetes (K8s)",
-      description: "Orquestração de contêineres para aplicações escaláveis",
+      name: "Node.js",
+      image: "/Marquee/node.svg",
+    },
+    {
+      name: "NestJS",
+      image: "/Marquee/nestjs.svg",
+    },
+    {
+      name: "MongoDB",
+      image: "/Marquee/mongo.svg",
+    },
+    {
+      name: "PostgreSQL",
+      image: "/Marquee/pgsql.svg",
+    },
+    {
+      name: "Kubernetes",
+      image: "/Marquee/kubernetes.svg",
     },
   ];
 
@@ -144,12 +165,19 @@ export default function Home() {
             {technologies.map((tech, index) => (
               <div
                 key={tech.name}
-                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mx-4 min-w-[300px]"
+                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mx-4 min-w-[200px] flex flex-col items-center"
               >
-                <h3 className="text-xl font-semibold mb-2">{tech.name}</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  {tech.description}
-                </p>
+                <div className="w-16 h-16 mb-3 relative">
+                  <Image
+                    src={tech.image}
+                    alt={tech.name}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold text-center">
+                  {tech.name}
+                </h3>
               </div>
             ))}
           </Marquee>
