@@ -162,7 +162,7 @@ export default function Home() {
             pauseOnHover={true}
             className="py-4"
           >
-            {technologies.map((tech, index) => (
+            {technologies.map((tech) => (
               <div
                 key={tech.name}
                 className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mx-4 min-w-[200px] flex flex-col items-center"
